@@ -16,17 +16,17 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task2.V24.Test
             double[] result = new double[stopValue - startValue + 1];
             result = dataService.GetMassFunction(startValue, stopValue);
             double[] wait = new double[stopValue - startValue + 1];
-            wait[0] = 13.81;
-            wait[1] = 11.87;
-            wait[2] = 9.87;
-            wait[3] = 7.74;
-            wait[4] = 5.36;
-            wait[5] = 2.5;
-            wait[6] = 0;
-            wait[7] = 0.79;
-            wait[8] = -1.75;
-            wait[9] = -3.78;
-            wait[10] = -5.71;
+            wait[0] = -8.86;
+            wait[1] = -7.19;
+            wait[2] = -6.14;
+            wait[3] = -4.76;
+            wait[4] = -2.33;
+            wait[5] = 1;
+            wait[6] = 4.38;
+            wait[7] = 0;
+            wait[8] = 6.13;
+            wait[9] = 7.07;
+            wait[10] = 8.61;
             CollectionAssert.AreEqual(result, wait);
         }
     }

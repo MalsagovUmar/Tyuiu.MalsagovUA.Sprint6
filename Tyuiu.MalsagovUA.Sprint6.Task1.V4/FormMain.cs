@@ -53,7 +53,7 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task1.V4
 
         private void buttonHelp_MUA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 1 выполнил студент группы АСОиУб-23-2 Мальсагов Умар Асланович", "Сообщение");
+            MessageBox.Show("Таск 1 выполнил студент группы АСОиУб-23-2 Мальсагов Умар Асланович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void textBoxStartStep_MUA_KeyPress(object sender, KeyPressEventArgs e)
