@@ -179,7 +179,9 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task1.V4
             this.Controls.Add(this.groupBoxInPutData_MUA);
             this.Controls.Add(this.groupBoxTask_MUA);
             this.Controls.Add(this.groupBoxOutPutData_MUA);
+            this.MaximizeBox = false;
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 1 | Вариант 4 | Мальсагов У.А.";
             this.groupBoxOutPutData_MUA.ResumeLayout(false);
             this.groupBoxOutPutData_MUA.PerformLayout();
