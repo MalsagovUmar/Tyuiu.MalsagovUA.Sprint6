@@ -17,7 +17,7 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task0.V27
         {
             InitializeComponent();
         }
-        private void buttonDone_Click(object sender, EventArgs e)
+        private void buttonDone_MUA_Click(object sender, EventArgs e)
         {
             DataService ds = new DataService();
             try

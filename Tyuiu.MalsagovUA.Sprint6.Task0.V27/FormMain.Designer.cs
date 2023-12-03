@@ -30,9 +30,9 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task0.V27
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(x));
-            this.groupBoxTask = new System.Windows.Forms.GroupBox();
+            this.groupBoxTask_MUA = new System.Windows.Forms.GroupBox();
             this.textBoxTask_MUA = new System.Windows.Forms.TextBox();
-            this.pictureBoxFormula = new System.Windows.Forms.PictureBox();
+            this.pictureBoxFormula_MUA = new System.Windows.Forms.PictureBox();
             this.groupBoxInPutData_MUA = new System.Windows.Forms.GroupBox();
             this.labelVarX_MUA = new System.Windows.Forms.Label();
             this.textBoxVarX_MUA = new System.Windows.Forms.TextBox();
@@ -40,23 +40,23 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task0.V27
             this.labelResult_MUA = new System.Windows.Forms.Label();
             this.textBoxResult_MUA = new System.Windows.Forms.TextBox();
             this.buttonHelp_MUA = new System.Windows.Forms.Button();
-            this.buttonDone = new System.Windows.Forms.Button();
-            this.groupBoxTask.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFormula)).BeginInit();
+            this.buttonDone_MUA = new System.Windows.Forms.Button();
+            this.groupBoxTask_MUA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFormula_MUA)).BeginInit();
             this.groupBoxInPutData_MUA.SuspendLayout();
             this.groupBoxOutPutData_MUA.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBoxTask
+            // groupBoxTask_MUA
             // 
-            this.groupBoxTask.Controls.Add(this.textBoxTask_MUA);
-            this.groupBoxTask.Controls.Add(this.pictureBoxFormula);
-            this.groupBoxTask.Location = new System.Drawing.Point(38, 34);
-            this.groupBoxTask.Name = "groupBoxTask";
-            this.groupBoxTask.Size = new System.Drawing.Size(750, 225);
-            this.groupBoxTask.TabIndex = 0;
-            this.groupBoxTask.TabStop = false;
-            this.groupBoxTask.Text = "Условие";
+            this.groupBoxTask_MUA.Controls.Add(this.textBoxTask_MUA);
+            this.groupBoxTask_MUA.Controls.Add(this.pictureBoxFormula_MUA);
+            this.groupBoxTask_MUA.Location = new System.Drawing.Point(38, 34);
+            this.groupBoxTask_MUA.Name = "groupBoxTask_MUA";
+            this.groupBoxTask_MUA.Size = new System.Drawing.Size(750, 225);
+            this.groupBoxTask_MUA.TabIndex = 0;
+            this.groupBoxTask_MUA.TabStop = false;
+            this.groupBoxTask_MUA.Text = "Условие";
             // 
             // textBoxTask_MUA
             // 
@@ -68,14 +68,14 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task0.V27
             this.textBoxTask_MUA.TabIndex = 2;
             this.textBoxTask_MUA.Text = "Вычислить значение выражения по формуле";
             // 
-            // pictureBoxFormula
+            // pictureBoxFormula_MUA
             // 
-            this.pictureBoxFormula.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFormula.Image")));
-            this.pictureBoxFormula.Location = new System.Drawing.Point(374, 25);
-            this.pictureBoxFormula.Name = "pictureBoxFormula";
-            this.pictureBoxFormula.Size = new System.Drawing.Size(370, 97);
-            this.pictureBoxFormula.TabIndex = 1;
-            this.pictureBoxFormula.TabStop = false;
+            this.pictureBoxFormula_MUA.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFormula_MUA.Image")));
+            this.pictureBoxFormula_MUA.Location = new System.Drawing.Point(374, 25);
+            this.pictureBoxFormula_MUA.Name = "pictureBoxFormula_MUA";
+            this.pictureBoxFormula_MUA.Size = new System.Drawing.Size(370, 97);
+            this.pictureBoxFormula_MUA.TabIndex = 1;
+            this.pictureBoxFormula_MUA.TabStop = false;
             // 
             // groupBoxInPutData_MUA
             // 
@@ -144,34 +144,34 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task0.V27
             this.buttonHelp_MUA.UseVisualStyleBackColor = true;
             this.buttonHelp_MUA.Click += new System.EventHandler(this.buttonHelp_MUA_Click);
             // 
-            // buttonDone
+            // buttonDone_MUA
             // 
-            this.buttonDone.Location = new System.Drawing.Point(646, 395);
-            this.buttonDone.Name = "buttonDone";
-            this.buttonDone.Size = new System.Drawing.Size(136, 42);
-            this.buttonDone.TabIndex = 4;
-            this.buttonDone.Text = "Выполнить";
-            this.buttonDone.UseVisualStyleBackColor = true;
-            this.buttonDone.Click += new System.EventHandler(this.buttonDone_Click);
+            this.buttonDone_MUA.Location = new System.Drawing.Point(646, 395);
+            this.buttonDone_MUA.Name = "buttonDone_MUA";
+            this.buttonDone_MUA.Size = new System.Drawing.Size(136, 42);
+            this.buttonDone_MUA.TabIndex = 4;
+            this.buttonDone_MUA.Text = "Выполнить";
+            this.buttonDone_MUA.UseVisualStyleBackColor = true;
+            this.buttonDone_MUA.Click += new System.EventHandler(this.buttonDone_MUA_Click);
             // 
             // x
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonDone);
+            this.Controls.Add(this.buttonDone_MUA);
             this.Controls.Add(this.buttonHelp_MUA);
             this.Controls.Add(this.groupBoxOutPutData_MUA);
             this.Controls.Add(this.groupBoxInPutData_MUA);
-            this.Controls.Add(this.groupBoxTask);
+            this.Controls.Add(this.groupBoxTask_MUA);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "x";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 0 | Вариант 27 | Мальсагов У.А.";
-            this.groupBoxTask.ResumeLayout(false);
-            this.groupBoxTask.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFormula)).EndInit();
+            this.groupBoxTask_MUA.ResumeLayout(false);
+            this.groupBoxTask_MUA.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFormula_MUA)).EndInit();
             this.groupBoxInPutData_MUA.ResumeLayout(false);
             this.groupBoxInPutData_MUA.PerformLayout();
             this.groupBoxOutPutData_MUA.ResumeLayout(false);
@@ -182,12 +182,12 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task0.V27
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBoxTask;
-        private System.Windows.Forms.PictureBox pictureBoxFormula;
+        private System.Windows.Forms.GroupBox groupBoxTask_MUA;
+        private System.Windows.Forms.PictureBox pictureBoxFormula_MUA;
         private System.Windows.Forms.GroupBox groupBoxInPutData_MUA;
         private System.Windows.Forms.GroupBox groupBoxOutPutData_MUA;
         private System.Windows.Forms.Button buttonHelp_MUA;
-        private System.Windows.Forms.Button buttonDone;
+        private System.Windows.Forms.Button buttonDone_MUA;
         private System.Windows.Forms.TextBox textBoxResult_MUA;
         private System.Windows.Forms.Label labelResult_MUA;
         private System.Windows.Forms.Label labelVarX_MUA;
