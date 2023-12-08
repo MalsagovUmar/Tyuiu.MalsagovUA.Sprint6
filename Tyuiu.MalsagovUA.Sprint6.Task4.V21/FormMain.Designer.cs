@@ -29,33 +29,33 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task4.V21
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panelTop_LEFT = new System.Windows.Forms.Panel();
-            this.panelLeft_MUA = new System.Windows.Forms.Panel();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.panelMid_MUA = new System.Windows.Forms.Panel();
+            this.buttonHelp_MUA = new System.Windows.Forms.Button();
+            this.buttonSave_MUA = new System.Windows.Forms.Button();
+            this.buttonDone_MUA = new System.Windows.Forms.Button();
+            this.groupBoxInPutData_MUA = new System.Windows.Forms.GroupBox();
+            this.labelStopStep_MUA = new System.Windows.Forms.Label();
+            this.labelStartStep_MUA = new System.Windows.Forms.Label();
+            this.textBoxStopStep_MUA = new System.Windows.Forms.TextBox();
+            this.textBoxStartStep_MUA = new System.Windows.Forms.TextBox();
             this.groupBoxTask_MUA = new System.Windows.Forms.GroupBox();
             this.textBoxTask_MUA = new System.Windows.Forms.TextBox();
-            this.groupBoxInPutData_MUA = new System.Windows.Forms.GroupBox();
-            this.textBoxStartStep_MUA = new System.Windows.Forms.TextBox();
-            this.textBoxStopStep_MUA = new System.Windows.Forms.TextBox();
-            this.labelStartStep_MUA = new System.Windows.Forms.Label();
-            this.labelStopStep_MUA = new System.Windows.Forms.Label();
-            this.buttonDone_MUA = new System.Windows.Forms.Button();
-            this.buttonSave_MUA = new System.Windows.Forms.Button();
-            this.buttonHelp_MUA = new System.Windows.Forms.Button();
+            this.panelLeft_MUA = new System.Windows.Forms.Panel();
             this.groupBoxResult_MUA = new System.Windows.Forms.GroupBox();
             this.textBoxResult_MUA = new System.Windows.Forms.TextBox();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.panelMid_MUA = new System.Windows.Forms.Panel();
             this.chartFunction_MUA = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panelTop_LEFT.SuspendLayout();
-            this.panelLeft_MUA.SuspendLayout();
-            this.panelMid_MUA.SuspendLayout();
-            this.groupBoxTask_MUA.SuspendLayout();
             this.groupBoxInPutData_MUA.SuspendLayout();
+            this.groupBoxTask_MUA.SuspendLayout();
+            this.panelLeft_MUA.SuspendLayout();
             this.groupBoxResult_MUA.SuspendLayout();
+            this.panelMid_MUA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_MUA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,34 +73,88 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task4.V21
             this.panelTop_LEFT.Size = new System.Drawing.Size(1188, 114);
             this.panelTop_LEFT.TabIndex = 1;
             // 
-            // panelLeft_MUA
+            // buttonHelp_MUA
             // 
-            this.panelLeft_MUA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panelLeft_MUA.Controls.Add(this.groupBoxResult_MUA);
-            this.panelLeft_MUA.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft_MUA.Location = new System.Drawing.Point(0, 114);
-            this.panelLeft_MUA.Name = "panelLeft_MUA";
-            this.panelLeft_MUA.Size = new System.Drawing.Size(267, 430);
-            this.panelLeft_MUA.TabIndex = 2;
+            this.buttonHelp_MUA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonHelp_MUA.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonHelp_MUA.Location = new System.Drawing.Point(1082, 12);
+            this.buttonHelp_MUA.Name = "buttonHelp_MUA";
+            this.buttonHelp_MUA.Size = new System.Drawing.Size(94, 70);
+            this.buttonHelp_MUA.TabIndex = 2;
+            this.buttonHelp_MUA.Text = "Справка";
+            this.buttonHelp_MUA.UseVisualStyleBackColor = false;
+            this.buttonHelp_MUA.Click += new System.EventHandler(this.buttonHelp_MUA_Click);
             // 
-            // splitter1
+            // buttonSave_MUA
             // 
-            this.splitter1.Location = new System.Drawing.Point(267, 114);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 430);
-            this.splitter1.TabIndex = 3;
-            this.splitter1.TabStop = false;
+            this.buttonSave_MUA.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.buttonSave_MUA.Location = new System.Drawing.Point(962, 13);
+            this.buttonSave_MUA.Name = "buttonSave_MUA";
+            this.buttonSave_MUA.Size = new System.Drawing.Size(114, 69);
+            this.buttonSave_MUA.TabIndex = 2;
+            this.buttonSave_MUA.Text = "Сохранить";
+            this.buttonSave_MUA.UseVisualStyleBackColor = false;
+            this.buttonSave_MUA.Click += new System.EventHandler(this.buttonSave_MUA_Click);
             // 
-            // panelMid_MUA
+            // buttonDone_MUA
             // 
-            this.panelMid_MUA.BackColor = System.Drawing.Color.Red;
-            this.panelMid_MUA.Controls.Add(this.chartFunction_MUA);
-            this.panelMid_MUA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMid_MUA.Location = new System.Drawing.Point(270, 114);
-            this.panelMid_MUA.Name = "panelMid_MUA";
-            this.panelMid_MUA.Padding = new System.Windows.Forms.Padding(5);
-            this.panelMid_MUA.Size = new System.Drawing.Size(918, 430);
-            this.panelMid_MUA.TabIndex = 4;
+            this.buttonDone_MUA.BackColor = System.Drawing.Color.Green;
+            this.buttonDone_MUA.Location = new System.Drawing.Point(822, 13);
+            this.buttonDone_MUA.Name = "buttonDone_MUA";
+            this.buttonDone_MUA.Size = new System.Drawing.Size(134, 69);
+            this.buttonDone_MUA.TabIndex = 2;
+            this.buttonDone_MUA.Text = "Выполнить";
+            this.buttonDone_MUA.UseVisualStyleBackColor = false;
+            this.buttonDone_MUA.Click += new System.EventHandler(this.buttonDone_MUA_Click);
+            // 
+            // groupBoxInPutData_MUA
+            // 
+            this.groupBoxInPutData_MUA.Controls.Add(this.labelStopStep_MUA);
+            this.groupBoxInPutData_MUA.Controls.Add(this.labelStartStep_MUA);
+            this.groupBoxInPutData_MUA.Controls.Add(this.textBoxStopStep_MUA);
+            this.groupBoxInPutData_MUA.Controls.Add(this.textBoxStartStep_MUA);
+            this.groupBoxInPutData_MUA.Location = new System.Drawing.Point(502, 4);
+            this.groupBoxInPutData_MUA.Name = "groupBoxInPutData_MUA";
+            this.groupBoxInPutData_MUA.Size = new System.Drawing.Size(314, 100);
+            this.groupBoxInPutData_MUA.TabIndex = 1;
+            this.groupBoxInPutData_MUA.TabStop = false;
+            this.groupBoxInPutData_MUA.Text = "Ввод данных:";
+            // 
+            // labelStopStep_MUA
+            // 
+            this.labelStopStep_MUA.AutoSize = true;
+            this.labelStopStep_MUA.Location = new System.Drawing.Point(162, 29);
+            this.labelStopStep_MUA.Name = "labelStopStep_MUA";
+            this.labelStopStep_MUA.Size = new System.Drawing.Size(101, 20);
+            this.labelStopStep_MUA.TabIndex = 1;
+            this.labelStopStep_MUA.Text = "Конец шага:";
+            // 
+            // labelStartStep_MUA
+            // 
+            this.labelStartStep_MUA.AutoSize = true;
+            this.labelStartStep_MUA.Location = new System.Drawing.Point(6, 29);
+            this.labelStartStep_MUA.Name = "labelStartStep_MUA";
+            this.labelStartStep_MUA.Size = new System.Drawing.Size(102, 20);
+            this.labelStartStep_MUA.TabIndex = 1;
+            this.labelStartStep_MUA.Text = "Старт шага:";
+            // 
+            // textBoxStopStep_MUA
+            // 
+            this.textBoxStopStep_MUA.Location = new System.Drawing.Point(166, 52);
+            this.textBoxStopStep_MUA.Name = "textBoxStopStep_MUA";
+            this.textBoxStopStep_MUA.Size = new System.Drawing.Size(142, 26);
+            this.textBoxStopStep_MUA.TabIndex = 0;
+            this.textBoxStopStep_MUA.Text = "5";
+            this.textBoxStopStep_MUA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxStartStep_MUA_KeyPress);
+            // 
+            // textBoxStartStep_MUA
+            // 
+            this.textBoxStartStep_MUA.Location = new System.Drawing.Point(6, 52);
+            this.textBoxStartStep_MUA.Name = "textBoxStartStep_MUA";
+            this.textBoxStartStep_MUA.Size = new System.Drawing.Size(142, 26);
+            this.textBoxStartStep_MUA.TabIndex = 0;
+            this.textBoxStartStep_MUA.Text = "-5";
+            this.textBoxStartStep_MUA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxStartStep_MUA_KeyPress);
             // 
             // groupBoxTask_MUA
             // 
@@ -124,86 +178,15 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task4.V21
     " Построить график функции и сохранить в файл OutPutFileTask4V21.txt по нажатию к" +
     "нопки.";
             // 
-            // groupBoxInPutData_MUA
+            // panelLeft_MUA
             // 
-            this.groupBoxInPutData_MUA.Controls.Add(this.labelStopStep_MUA);
-            this.groupBoxInPutData_MUA.Controls.Add(this.labelStartStep_MUA);
-            this.groupBoxInPutData_MUA.Controls.Add(this.textBoxStopStep_MUA);
-            this.groupBoxInPutData_MUA.Controls.Add(this.textBoxStartStep_MUA);
-            this.groupBoxInPutData_MUA.Location = new System.Drawing.Point(502, 4);
-            this.groupBoxInPutData_MUA.Name = "groupBoxInPutData_MUA";
-            this.groupBoxInPutData_MUA.Size = new System.Drawing.Size(314, 100);
-            this.groupBoxInPutData_MUA.TabIndex = 1;
-            this.groupBoxInPutData_MUA.TabStop = false;
-            this.groupBoxInPutData_MUA.Text = "Ввод данных:";
-            // 
-            // textBoxStartStep_MUA
-            // 
-            this.textBoxStartStep_MUA.Location = new System.Drawing.Point(6, 52);
-            this.textBoxStartStep_MUA.Name = "textBoxStartStep_MUA";
-            this.textBoxStartStep_MUA.Size = new System.Drawing.Size(142, 26);
-            this.textBoxStartStep_MUA.TabIndex = 0;
-            this.textBoxStartStep_MUA.Text = "-5";
-            // 
-            // textBoxStopStep_MUA
-            // 
-            this.textBoxStopStep_MUA.Location = new System.Drawing.Point(166, 52);
-            this.textBoxStopStep_MUA.Name = "textBoxStopStep_MUA";
-            this.textBoxStopStep_MUA.Size = new System.Drawing.Size(142, 26);
-            this.textBoxStopStep_MUA.TabIndex = 0;
-            this.textBoxStopStep_MUA.Text = "5";
-            // 
-            // labelStartStep_MUA
-            // 
-            this.labelStartStep_MUA.AutoSize = true;
-            this.labelStartStep_MUA.Location = new System.Drawing.Point(6, 29);
-            this.labelStartStep_MUA.Name = "labelStartStep_MUA";
-            this.labelStartStep_MUA.Size = new System.Drawing.Size(102, 20);
-            this.labelStartStep_MUA.TabIndex = 1;
-            this.labelStartStep_MUA.Text = "Старт шага:";
-            // 
-            // labelStopStep_MUA
-            // 
-            this.labelStopStep_MUA.AutoSize = true;
-            this.labelStopStep_MUA.Location = new System.Drawing.Point(162, 29);
-            this.labelStopStep_MUA.Name = "labelStopStep_MUA";
-            this.labelStopStep_MUA.Size = new System.Drawing.Size(101, 20);
-            this.labelStopStep_MUA.TabIndex = 1;
-            this.labelStopStep_MUA.Text = "Конец шага:";
-            // 
-            // buttonDone_MUA
-            // 
-            this.buttonDone_MUA.BackColor = System.Drawing.Color.Green;
-            this.buttonDone_MUA.Location = new System.Drawing.Point(822, 13);
-            this.buttonDone_MUA.Name = "buttonDone_MUA";
-            this.buttonDone_MUA.Size = new System.Drawing.Size(134, 69);
-            this.buttonDone_MUA.TabIndex = 2;
-            this.buttonDone_MUA.Text = "Выполнить";
-            this.buttonDone_MUA.UseVisualStyleBackColor = false;
-            this.buttonDone_MUA.Click += new System.EventHandler(this.buttonDone_MUA_Click);
-            // 
-            // buttonSave_MUA
-            // 
-            this.buttonSave_MUA.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.buttonSave_MUA.Location = new System.Drawing.Point(962, 13);
-            this.buttonSave_MUA.Name = "buttonSave_MUA";
-            this.buttonSave_MUA.Size = new System.Drawing.Size(114, 69);
-            this.buttonSave_MUA.TabIndex = 2;
-            this.buttonSave_MUA.Text = "Сохранить";
-            this.buttonSave_MUA.UseVisualStyleBackColor = false;
-            this.buttonSave_MUA.Click += new System.EventHandler(this.buttonSave_MUA_Click);
-            // 
-            // buttonHelp_MUA
-            // 
-            this.buttonHelp_MUA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonHelp_MUA.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.buttonHelp_MUA.Location = new System.Drawing.Point(1082, 12);
-            this.buttonHelp_MUA.Name = "buttonHelp_MUA";
-            this.buttonHelp_MUA.Size = new System.Drawing.Size(94, 70);
-            this.buttonHelp_MUA.TabIndex = 2;
-            this.buttonHelp_MUA.Text = "Справка";
-            this.buttonHelp_MUA.UseVisualStyleBackColor = false;
-            this.buttonHelp_MUA.Click += new System.EventHandler(this.buttonHelp_MUA_Click);
+            this.panelLeft_MUA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelLeft_MUA.Controls.Add(this.groupBoxResult_MUA);
+            this.panelLeft_MUA.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft_MUA.Location = new System.Drawing.Point(0, 114);
+            this.panelLeft_MUA.Name = "panelLeft_MUA";
+            this.panelLeft_MUA.Size = new System.Drawing.Size(267, 430);
+            this.panelLeft_MUA.TabIndex = 2;
             // 
             // groupBoxResult_MUA
             // 
@@ -231,31 +214,50 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task4.V21
             this.textBoxResult_MUA.Size = new System.Drawing.Size(235, 379);
             this.textBoxResult_MUA.TabIndex = 0;
             // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(267, 114);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 430);
+            this.splitter1.TabIndex = 3;
+            this.splitter1.TabStop = false;
+            // 
+            // panelMid_MUA
+            // 
+            this.panelMid_MUA.BackColor = System.Drawing.Color.Red;
+            this.panelMid_MUA.Controls.Add(this.chartFunction_MUA);
+            this.panelMid_MUA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMid_MUA.Location = new System.Drawing.Point(270, 114);
+            this.panelMid_MUA.Name = "panelMid_MUA";
+            this.panelMid_MUA.Padding = new System.Windows.Forms.Padding(5);
+            this.panelMid_MUA.Size = new System.Drawing.Size(918, 430);
+            this.panelMid_MUA.TabIndex = 4;
+            // 
             // chartFunction_MUA
             // 
             this.chartFunction_MUA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.chartFunction_MUA.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartFunction_MUA.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chartFunction_MUA.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartFunction_MUA.Legends.Add(legend2);
             this.chartFunction_MUA.Location = new System.Drawing.Point(9, 7);
             this.chartFunction_MUA.Name = "chartFunction_MUA";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.IsVisibleInLegend = false;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartFunction_MUA.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.IsVisibleInLegend = false;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartFunction_MUA.Series.Add(series2);
             this.chartFunction_MUA.Size = new System.Drawing.Size(901, 415);
             this.chartFunction_MUA.TabIndex = 0;
             this.chartFunction_MUA.Text = "График функции f(x):";
-            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            title1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            title1.Name = "TitleFunction";
-            title1.Text = "График функции f(x)";
-            this.chartFunction_MUA.Titles.Add(title1);
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            title2.Name = "TitleFunction";
+            title2.Text = "График функции f(x)";
+            this.chartFunction_MUA.Titles.Add(title2);
             // 
             // FormMain
             // 
@@ -271,14 +273,14 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task4.V21
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 4 | Вариант 21 | Мальсагов У.А.";
             this.panelTop_LEFT.ResumeLayout(false);
-            this.panelLeft_MUA.ResumeLayout(false);
-            this.panelMid_MUA.ResumeLayout(false);
-            this.groupBoxTask_MUA.ResumeLayout(false);
-            this.groupBoxTask_MUA.PerformLayout();
             this.groupBoxInPutData_MUA.ResumeLayout(false);
             this.groupBoxInPutData_MUA.PerformLayout();
+            this.groupBoxTask_MUA.ResumeLayout(false);
+            this.groupBoxTask_MUA.PerformLayout();
+            this.panelLeft_MUA.ResumeLayout(false);
             this.groupBoxResult_MUA.ResumeLayout(false);
             this.groupBoxResult_MUA.PerformLayout();
+            this.panelMid_MUA.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_MUA)).EndInit();
             this.ResumeLayout(false);
 

@@ -79,5 +79,13 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task4.V21
                 MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void textBoxStartStep_MUA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && (e.KeyChar != ',') && (e.KeyChar != 8) && (e.KeyChar != '-'))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
