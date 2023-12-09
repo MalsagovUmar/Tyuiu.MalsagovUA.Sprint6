@@ -29,10 +29,10 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task4.V21
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panelTop_LEFT = new System.Windows.Forms.Panel();
             this.buttonHelp_MUA = new System.Windows.Forms.Button();
             this.buttonSave_MUA = new System.Windows.Forms.Button();
@@ -47,7 +47,7 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task4.V21
             this.panelLeft_MUA = new System.Windows.Forms.Panel();
             this.groupBoxResult_MUA = new System.Windows.Forms.GroupBox();
             this.textBoxResult_MUA = new System.Windows.Forms.TextBox();
-            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.splitterMain_MUA = new System.Windows.Forms.Splitter();
             this.panelMid_MUA = new System.Windows.Forms.Panel();
             this.chartFunction_MUA = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panelTop_LEFT.SuspendLayout();
@@ -214,23 +214,23 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task4.V21
             this.textBoxResult_MUA.Size = new System.Drawing.Size(235, 379);
             this.textBoxResult_MUA.TabIndex = 0;
             // 
-            // splitter1
+            // splitterMain_MUA
             // 
-            this.splitter1.Location = new System.Drawing.Point(267, 114);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 430);
-            this.splitter1.TabIndex = 3;
-            this.splitter1.TabStop = false;
+            this.splitterMain_MUA.Location = new System.Drawing.Point(267, 114);
+            this.splitterMain_MUA.Name = "splitterMain_MUA";
+            this.splitterMain_MUA.Size = new System.Drawing.Size(10, 430);
+            this.splitterMain_MUA.TabIndex = 3;
+            this.splitterMain_MUA.TabStop = false;
             // 
             // panelMid_MUA
             // 
             this.panelMid_MUA.BackColor = System.Drawing.Color.Red;
             this.panelMid_MUA.Controls.Add(this.chartFunction_MUA);
             this.panelMid_MUA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMid_MUA.Location = new System.Drawing.Point(270, 114);
+            this.panelMid_MUA.Location = new System.Drawing.Point(277, 114);
             this.panelMid_MUA.Name = "panelMid_MUA";
             this.panelMid_MUA.Padding = new System.Windows.Forms.Padding(5);
-            this.panelMid_MUA.Size = new System.Drawing.Size(918, 430);
+            this.panelMid_MUA.Size = new System.Drawing.Size(911, 430);
             this.panelMid_MUA.TabIndex = 4;
             // 
             // chartFunction_MUA
@@ -238,26 +238,26 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task4.V21
             this.chartFunction_MUA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea2.Name = "ChartArea1";
-            this.chartFunction_MUA.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartFunction_MUA.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chartFunction_MUA.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartFunction_MUA.Legends.Add(legend1);
             this.chartFunction_MUA.Location = new System.Drawing.Point(9, 7);
             this.chartFunction_MUA.Name = "chartFunction_MUA";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.IsVisibleInLegend = false;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartFunction_MUA.Series.Add(series2);
-            this.chartFunction_MUA.Size = new System.Drawing.Size(901, 415);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartFunction_MUA.Series.Add(series1);
+            this.chartFunction_MUA.Size = new System.Drawing.Size(894, 415);
             this.chartFunction_MUA.TabIndex = 0;
             this.chartFunction_MUA.Text = "График функции f(x):";
-            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            title2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            title2.Name = "TitleFunction";
-            title2.Text = "График функции f(x)";
-            this.chartFunction_MUA.Titles.Add(title2);
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            title1.Name = "TitleFunction";
+            title1.Text = "График функции f(x)";
+            this.chartFunction_MUA.Titles.Add(title1);
             // 
             // FormMain
             // 
@@ -265,7 +265,7 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task4.V21
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1188, 544);
             this.Controls.Add(this.panelMid_MUA);
-            this.Controls.Add(this.splitter1);
+            this.Controls.Add(this.splitterMain_MUA);
             this.Controls.Add(this.panelLeft_MUA);
             this.Controls.Add(this.panelTop_LEFT);
             this.MinimumSize = new System.Drawing.Size(1210, 600);
@@ -290,7 +290,7 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task4.V21
 
         private System.Windows.Forms.Panel panelTop_LEFT;
         private System.Windows.Forms.Panel panelLeft_MUA;
-        private System.Windows.Forms.Splitter splitter1;
+        private System.Windows.Forms.Splitter splitterMain_MUA;
         private System.Windows.Forms.Panel panelMid_MUA;
         private System.Windows.Forms.GroupBox groupBoxTask_MUA;
         private System.Windows.Forms.TextBox textBoxTask_MUA;

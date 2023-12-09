@@ -41,15 +41,17 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task6.V1
             this.groupBoxInPutData_MUA = new System.Windows.Forms.GroupBox();
             this.textBoxInPutData_MUA = new System.Windows.Forms.TextBox();
             this.panelRight_MUA = new System.Windows.Forms.Panel();
-            this.groupBoxTask_MUA = new System.Windows.Forms.GroupBox();
-            this.textBoxTask_MUA = new System.Windows.Forms.TextBox();
+            this.splitterMain_MUA = new System.Windows.Forms.Splitter();
             this.groupBoxOutPutData_MUA = new System.Windows.Forms.GroupBox();
             this.textBoxOutPutData_MUA = new System.Windows.Forms.TextBox();
+            this.groupBoxTask_MUA = new System.Windows.Forms.GroupBox();
+            this.textBoxTask_MUA = new System.Windows.Forms.TextBox();
             this.panelTop_MUA.SuspendLayout();
             this.panelLeft_MUA.SuspendLayout();
             this.groupBoxInPutData_MUA.SuspendLayout();
-            this.groupBoxTask_MUA.SuspendLayout();
+            this.panelRight_MUA.SuspendLayout();
             this.groupBoxOutPutData_MUA.SuspendLayout();
+            this.groupBoxTask_MUA.SuspendLayout();
             this.SuspendLayout();
             // 
             // openFileDialogTask_MUA
@@ -110,7 +112,6 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task6.V1
             // panelLeft_MUA
             // 
             this.panelLeft_MUA.Controls.Add(this.groupBoxInPutData_MUA);
-            this.panelLeft_MUA.Controls.Add(this.panelRight_MUA);
             this.panelLeft_MUA.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft_MUA.Location = new System.Drawing.Point(0, 207);
             this.panelLeft_MUA.Name = "panelLeft_MUA";
@@ -140,11 +141,41 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task6.V1
             // 
             // panelRight_MUA
             // 
-            this.panelRight_MUA.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRight_MUA.Location = new System.Drawing.Point(0, 0);
+            this.panelRight_MUA.Controls.Add(this.splitterMain_MUA);
+            this.panelRight_MUA.Controls.Add(this.groupBoxOutPutData_MUA);
+            this.panelRight_MUA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelRight_MUA.Location = new System.Drawing.Point(526, 207);
             this.panelRight_MUA.Name = "panelRight_MUA";
-            this.panelRight_MUA.Size = new System.Drawing.Size(526, 437);
+            this.panelRight_MUA.Size = new System.Drawing.Size(552, 437);
             this.panelRight_MUA.TabIndex = 4;
+            // 
+            // splitterMain_MUA
+            // 
+            this.splitterMain_MUA.Location = new System.Drawing.Point(0, 0);
+            this.splitterMain_MUA.Name = "splitterMain_MUA";
+            this.splitterMain_MUA.Size = new System.Drawing.Size(3, 437);
+            this.splitterMain_MUA.TabIndex = 6;
+            this.splitterMain_MUA.TabStop = false;
+            // 
+            // groupBoxOutPutData_MUA
+            // 
+            this.groupBoxOutPutData_MUA.Controls.Add(this.textBoxOutPutData_MUA);
+            this.groupBoxOutPutData_MUA.Location = new System.Drawing.Point(6, 0);
+            this.groupBoxOutPutData_MUA.Name = "groupBoxOutPutData_MUA";
+            this.groupBoxOutPutData_MUA.Size = new System.Drawing.Size(516, 401);
+            this.groupBoxOutPutData_MUA.TabIndex = 5;
+            this.groupBoxOutPutData_MUA.TabStop = false;
+            this.groupBoxOutPutData_MUA.Text = "Вывод данных:";
+            // 
+            // textBoxOutPutData_MUA
+            // 
+            this.textBoxOutPutData_MUA.Location = new System.Drawing.Point(6, 66);
+            this.textBoxOutPutData_MUA.Multiline = true;
+            this.textBoxOutPutData_MUA.Name = "textBoxOutPutData_MUA";
+            this.textBoxOutPutData_MUA.ReadOnly = true;
+            this.textBoxOutPutData_MUA.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxOutPutData_MUA.Size = new System.Drawing.Size(503, 329);
+            this.textBoxOutPutData_MUA.TabIndex = 0;
             // 
             // groupBoxTask_MUA
             // 
@@ -168,32 +199,12 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task6.V1
     "ывести первое слово каждой строки в результирующею строку и вывести ее в textBox" +
     "Out.";
             // 
-            // groupBoxOutPutData_MUA
-            // 
-            this.groupBoxOutPutData_MUA.Controls.Add(this.textBoxOutPutData_MUA);
-            this.groupBoxOutPutData_MUA.Location = new System.Drawing.Point(532, 213);
-            this.groupBoxOutPutData_MUA.Name = "groupBoxOutPutData_MUA";
-            this.groupBoxOutPutData_MUA.Size = new System.Drawing.Size(516, 401);
-            this.groupBoxOutPutData_MUA.TabIndex = 5;
-            this.groupBoxOutPutData_MUA.TabStop = false;
-            this.groupBoxOutPutData_MUA.Text = "Вывод данных:";
-            // 
-            // textBoxOutPutData_MUA
-            // 
-            this.textBoxOutPutData_MUA.Location = new System.Drawing.Point(6, 60);
-            this.textBoxOutPutData_MUA.Multiline = true;
-            this.textBoxOutPutData_MUA.Name = "textBoxOutPutData_MUA";
-            this.textBoxOutPutData_MUA.ReadOnly = true;
-            this.textBoxOutPutData_MUA.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxOutPutData_MUA.Size = new System.Drawing.Size(503, 329);
-            this.textBoxOutPutData_MUA.TabIndex = 0;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1078, 644);
-            this.Controls.Add(this.groupBoxOutPutData_MUA);
+            this.Controls.Add(this.panelRight_MUA);
             this.Controls.Add(this.groupBoxTask_MUA);
             this.Controls.Add(this.panelLeft_MUA);
             this.Controls.Add(this.panelTop_MUA);
@@ -205,10 +216,11 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task6.V1
             this.panelLeft_MUA.ResumeLayout(false);
             this.groupBoxInPutData_MUA.ResumeLayout(false);
             this.groupBoxInPutData_MUA.PerformLayout();
-            this.groupBoxTask_MUA.ResumeLayout(false);
-            this.groupBoxTask_MUA.PerformLayout();
+            this.panelRight_MUA.ResumeLayout(false);
             this.groupBoxOutPutData_MUA.ResumeLayout(false);
             this.groupBoxOutPutData_MUA.PerformLayout();
+            this.groupBoxTask_MUA.ResumeLayout(false);
+            this.groupBoxTask_MUA.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -229,6 +241,7 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task6.V1
         private System.Windows.Forms.TextBox textBoxTask_MUA;
         private System.Windows.Forms.GroupBox groupBoxOutPutData_MUA;
         private System.Windows.Forms.TextBox textBoxOutPutData_MUA;
+        private System.Windows.Forms.Splitter splitterMain_MUA;
     }
 }
 

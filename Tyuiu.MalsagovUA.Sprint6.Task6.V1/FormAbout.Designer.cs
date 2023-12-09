@@ -80,6 +80,7 @@ namespace Tyuiu.MalsagovUA.Sprint6.Task6.V1
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(822, 506);
             this.Name = "FormAbout";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Сведения о разработчике";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAbout_MUA)).EndInit();
             this.ResumeLayout(false);
